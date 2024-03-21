@@ -12,24 +12,36 @@
     flex: 1;
     margin-left: 10rem;
 }
-.home-info .first-p {
-    font-size: 40px;
+.home-info .h1 {
+    font-size: 50px;
     font-weight: bolder;
     color: antiquewhite;
 }
 
-.home-info .second-p {
-    font-size: 25px;
+.home-info .p {
+    font-size: 30px;
     color: antiquewhite;
 }
 
-.home-info .first-p:hover{
+body.light-theme .h1,
+body.light-theme .p{
+    color: #1E1E1D; /* Light theme için metin rengi */
+}
+
+/* Dark Theme */
+body.dark-theme .h1,
+body.dark-theme  .p{
+    color: antiquewhite; /* Dark theme için metin rengi */
+}
+
+
+.home-info .h1:hover{
     color: pink;
     transform: translateY(6px);
     transition: all 200ms;
 }
 
-.home-info .second-p:hover{
+.home-info .p:hover{
     color: pink;
     transform: scale(1.1); /* Resmi 1.1 kat büyütür */
     filter: blur(1px);

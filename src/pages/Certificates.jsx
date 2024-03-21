@@ -1,5 +1,6 @@
 import Layout from "../components/Layout/Layout";
 import {Container} from "@mui/material";
+import "../../src/styles/CertificatesStyles.css";
 
 const Certificates = () => {
     return(

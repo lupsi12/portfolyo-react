@@ -1,0 +1,51 @@
+.main-box,
+body.dark-theme .main-box{
+    text-align: center;
+    background-color: #1A1A19;
+    color: antiquewhite;
+    padding: 4px;
+}
+body.light-theme .main-box{
+    text-align: center;
+    background-color: tan;
+    color: #1A1A19;
+    padding: 4px;
+}
+
+.main-box2 {
+    margin-top: 3rem;
+}
+
+.main-box2 svg {
+    font-size: 60px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.main-box2 svg:hover {
+    color: pink;
+    transform: translateX(6px);
+    transition: all 200ms;
+}
+
+@media (max-width: 1000px) {
+    .main-box2 h5 {
+        font-size: 5rem;
+    }
+}
+
+.main-box2 p {
+    margin: 0;
+    color: antiquewhite;
+    font-size: large;
+}
+
+.main-box2 a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+body.light-theme .main-box2 p,
+body.light-theme .main-box2 a {
+    color: #1A1A19;
+}

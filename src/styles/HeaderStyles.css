@@ -16,6 +16,7 @@
   text-decoration: none;
   color: antiquewhite;
 }
+
 .active {
   color: pink !important;
   font-weight: bold !important;
@@ -23,7 +24,6 @@
 /* mobile view */
 .mobile-navigation {
   list-style: none;
-  color: #61dafb;
 }
 .mobile-navigation li {
   margin-top: 20px;
@@ -38,14 +38,126 @@
   font-size: 1.4rem;
   color: antiquewhite;
 }
-.themeIcon {
+/* Light Theme */
+body.light-theme .navigation-menu li a,
+body.light-theme .mobile-navigation li a {
+  color: #1E1E1D; /* Light theme için metin rengi */
+}
+
+/* Dark Theme */
+body.dark-theme .navigation-menu li a,
+body.dark-theme .mobile-navigation li a {
+  color: antiquewhite; /* Dark theme için metin rengi */
+}
+.themeIcon,
+body.dark-theme .themeIcon{
   color: BLACK;
 }
-.themeChange {
+body.light-theme .themeIcon{
   color: orange;
 }
-.themeIcon:hover {
+.themeIcon:hover,
+body.light-theme .themeIcon:hover,
+body.dark-theme .themeIcon:hover{
   color: pink;
   transform: translateX(6px);
   transition: all 200ms;
 }
+
+.drawer-box,
+body.dark-theme .drawer-box {
+  text-align: center;
+  font-size: 60px;
+  background-color: #1A1A19;
+}
+body.light-theme .drawer-box {
+  text-align: center;
+  font-size: 60px;
+  background-color: antiquewhite;
+}
+
+.drawer-divider,
+body.dark-theme .drawer-divider {
+  height: 40px;
+  margin: 10px 0;
+  background-color: antiquewhite;
+}
+body.light-theme .drawer-divider {
+  height: 40px;
+  margin: 10px 0;
+  background-color: #424242;
+}
+
+.drawer-thypography,
+body.dark-theme .drawer-thypography {
+  flex-grow: 1;
+  color: antiquewhite;
+  font-size: 45px;
+  font-weight: bold;
+}
+body.light-theme .drawer-thypography {
+  flex-grow: 1;
+  color: #424242;
+  font-size: 45px;
+  font-weight: bold;
+}
+.drawer-thypography:hover,
+body.light-theme .drawer-thypography:hover,
+body.dark-theme .drawer-thypography:hover {
+  color: pink;
+  transform: translateX(6px);
+  transition: all 200ms;
+}
+
+.appBar,
+body.dark-theme .appBar {
+  background-color: #1A1A19;
+}
+body.light-theme .appBar {
+  background-color: antiquewhite;
+}
+
+.appBar-menuIcon,
+body.dark-theme .appBar-menuIcon{
+  color: antiquewhite;
+}
+
+body.light-theme .appBar-menuIcon{
+  color: #1A1A19;
+}
+
+.appBar-thypography,
+body.dark-theme .appBar-thypography{
+  color: antiquewhite;
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+body.light-theme .appBar-thypography{
+  color: #424242;
+  flex-grow: 1;
+  font-size: 18px;
+}
+.appBar-thypography:hover,
+body.dark-theme .appBar-thypography:hover,
+body.light-theme .appBar-thypography:hover {
+  color: pink;
+  transform: translateX(6px);
+  transition: all 200ms;
+}
+.drawer {
+  display: block;
+}
+
+@media (min-width: 1000px) {
+  .drawer {
+    display: none;
+  }
+}
+
+.drawer .MuiDrawer-paper {
+  background-color: #1A1A19;
+  box-sizing: border-box;
+  width: 220px;
+}
+

@@ -22,26 +22,27 @@ const Header = () => {
   };
 
   const [themeChange, setThemeChange] = useState(false);
-
     const handleThemeIcon = () => {
         setThemeChange(!themeChange);
+        if (!themeChange) {
+            // Light tema
+            document.body.classList.add('light-theme');
+            document.body.classList.remove('dark-theme');
+        } else {
+            // Dark tema
+            document.body.classList.add('dark-theme');
+            document.body.classList.remove('light-theme');
+        }
     };
 
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" , fontSize: '60px' }}>
-        <Divider sx={{ height: 40, margin: '10px 0' ,backgroundColor: 'pink'}} />
-      <Typography
-        sx={{ flexGrow: 1, my: 2, color: 'antiquewhite', fontSize: '45px',fontWeight: "bold",
-            ':hover': {
-                color: "pink",
-                transform: "translateX(6px)",
-                transition: "all 200ms"
-            },}}
-      >
+    <Box onClick={handleDrawerToggle} className="drawer-box">
+        <Divider className="drawer-divider" />
+      <Typography className="drawer-thypography">
           Işıl's website
       </Typography>
-        <Divider sx={{ height: 40, margin: '10px 0' ,backgroundColor: 'pink'}} />
+        <Divider className="drawer-divider" />
         <ul className="mobile-navigation">
             <li>
                 <NavLink activeClassName="active" to={"/"}>
@@ -66,6 +67,7 @@ const Header = () => {
             <li>
                 <NavLink to={"/contact"} activeClassName="active">Contact</NavLink>
             </li>
+            <WbSunny className="themeIcon" onClick={handleThemeIcon}/>
         </ul>
     </Box>
   );
@@ -73,34 +75,19 @@ const Header = () => {
     return (
         <>
             <Box>
-                <AppBar component={"nav"} sx={{bgcolor: "#1A1A19"}}>
+                <AppBar component={"nav"} className="appBar" sx={{ bgcolor: "#1A1A19" }}>
             <Toolbar>
               <IconButton
-                  color="inherit"
                   aria-label="open drawer"
                   edge="start"
-                  sx={{
-                    mr: 2,
-                    display: {sm: "none"},
-                  }}
                   onClick={handleDrawerToggle}
               >
-                <MenuIcon/>
+                <MenuIcon className="appBar-menuIcon"/>
               </IconButton>
-              <Typography
-                  color={"antiquewhite"}
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1,fontWeight: "bold",fontSize: "23px" ,
-                  ':hover': {
-                      color: "pink",
-                      transform: "translateX(6px)",
-                      transition: "all 200ms"
-                  },}}
-            >
+              <Typography className="appBar-thypography">
                   Işıl's website
             </Typography>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box>
                 <ul className="navigation-menu">
                     <li>
                         <NavLink activeClassName="active" to={"/"}>
@@ -125,25 +112,17 @@ const Header = () => {
                     <li>
                         <NavLink activeClassName="active" to={"/contact"}>Contact</NavLink>
                     </li>
-                    <WbSunny className={`themeIcon ${themeChange ? 'themeChange' : ''}`} onClick={handleThemeIcon}/>
+                    <WbSunny className="themeIcon" onClick={handleThemeIcon}/>
                 </ul>
 
             </Box>
             </Toolbar>
                 </AppBar>
                 <Box component="nav">
-                    <Drawer
+                    <Drawer className="drawer"
             variant="temporary"
             open={mobileOpen}
             onClose={handleDrawerToggle}
-            sx={{
-              display: { xs: "block", sm: "none" },
-              "& .MuiDrawer-paper": {
-                bgcolor: "#1A1A19",
-                boxSizing: "border-box",
-                width: "220px",
-              },
-            }}
           >
             {drawer}
           </Drawer>

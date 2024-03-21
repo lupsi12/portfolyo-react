@@ -4,27 +4,12 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import {Box, Link, Typography} from "@mui/material";
 import {LinkedIn} from "@mui/icons-material";
+import "../../styles/FooterStyles.css";
 const Footer = () => {
   return (
     <>
-      <Box
-        sx={{ textAlign: "center", bgcolor: "#1A1A19", color: "antiquewhite", p: 1 }}
-      >
-        <Box
-          sx={{
-            my: 3,
-            "& svg": {
-              fontSize: "60px",
-              cursor: "pointer",
-              mr: 2,
-            },
-            "& svg:hover": {
-              color: "pink",
-              transform: "translateX(6px)",
-              transition: "all 200ms",
-            },
-          }}
-        >
+      <Box className="main-box">
+        <Box className="main-box2">
             <Link href="https://www.instagram.com/isilkefal/"  color="inherit">
                 <InstagramIcon />
             </Link>
@@ -38,19 +23,12 @@ const Footer = () => {
                 <LinkedIn />
             </Link>
         </Box>
-          <Typography
-              variant="h5"
-              sx={{
-                  "@media (max-width:600px)": {
-                      fontSize: "1rem",
-                  },
-              }}
-          >
-              <p>
+          <Typography className="main-box2 h5">
+              <p className="main-box2 p">
                   coded with &hearts; by {" "}
-                  <a style={{color: "antiquewhite", textDecoration: "none"}} href={"https://www.linkedin.com/in/isilkefal/"}>Işıl </a>
+                  <a className="main-box2 a" href={"https://www.linkedin.com/in/isilkefal/"}>Işıl </a>
               </p>
-              <p>&copy; 2024</p>
+              <p className="main-box2 p">&copy; 2024</p>
           </Typography>
       </Box>
     </>
