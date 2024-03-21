@@ -1,0 +1,63 @@
+.container {
+    max-width: 1300px !important;
+    margin: 0 auto;
+    position: relative;
+}
+.picture-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.home-info {
+    flex: 1;
+    margin-left: 10rem;
+}
+.home-info .first-p {
+    font-size: 40px;
+    font-weight: bolder;
+    color: antiquewhite;
+}
+
+.home-info .second-p {
+    font-size: 25px;
+    color: antiquewhite;
+}
+
+.home-info .first-p:hover{
+    color: pink;
+    transform: translateY(6px);
+    transition: all 200ms;
+}
+
+.home-info .second-p:hover{
+    color: pink;
+    transform: scale(1.1); /* Resmi 1.1 kat büyütür */
+    filter: blur(1px);
+    transition: transform 0.3s ease, filter 0.3s ease; /* Geçiş süresi ve efekt türü ayarlanır */
+}
+.picture {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.picture:hover {
+    transform: scale(1.1); /* Resmi 1.1 kat büyütür */
+    filter: blur(1px);
+    transition: transform 0.3s ease, filter 0.3s ease; /* Geçiş süresi ve efekt türü ayarlanır */
+}
+
+.picture > div {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+.picture > div >img {
+    width: 375px; /* Genişlik */
+    height: 500px; /* Yükseklik */
+    border-radius: 10%; /* Yuvarlak kenarlar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

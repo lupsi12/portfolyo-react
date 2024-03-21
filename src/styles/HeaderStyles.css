@@ -1,0 +1,51 @@
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation-menu li {
+  margin: 0px 20px;
+}
+.navigation-menu li:hover {
+  color: pink;
+  transform: translateX(6px);
+  transition: all 200ms;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.active {
+  color: pink !important;
+  font-weight: bold !important;
+}
+/* mobile view */
+.mobile-navigation {
+  list-style: none;
+  color: #61dafb;
+}
+.mobile-navigation li {
+  margin-top: 20px;
+}
+.mobile-navigation li:hover {
+  color: pink;
+  transform: translateX(6px);
+  transition: all 200ms;
+}
+.mobile-navigation li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: antiquewhite;
+}
+.themeIcon {
+  color: BLACK;
+}
+.themeChange {
+  color: orange;
+}
+.themeIcon:hover {
+  color: pink;
+  transform: translateX(6px);
+  transition: all 200ms;
+}
