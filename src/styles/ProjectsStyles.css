@@ -1,0 +1,69 @@
+.projectsContainer {
+    height: 750px;
+    text-align: center;
+
+}
+.projectsContainer p {
+    color: antiquewhite;
+    font-size: 40px;
+}
+body.dark-theme .projectsContainer div,
+.projectsContainer div {
+    margin: auto;
+    background-color: blanchedalmond;
+    width: 75%;
+    height: 70%;
+    border-radius: 3.5%;
+}
+body.light-theme .projectsContainer div {
+    margin: auto;
+    background-color: #27242f;
+    width: 75%;
+    height: 70%;
+    border-radius: 3.5%;
+}
+body.dark-theme .projectsContainer div:hover,
+.projectsContainer div:hover,
+body.light-theme .projectsContainer div:hover{
+    transform: scale(1.2); /* Resmi 1.1 kat büyütür */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Geçiş süresi ve efekt türü ayarlanır */
+}
+
+body.dark-theme .projectsContainer div a,
+.projectsContainer div a {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #1A1A19;
+    text-decoration: none;
+}
+body.dark-theme .projectsContainer div p,
+.projectsContainer div p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 18px;
+    color: #1A1A19;
+}
+body.light-theme .projectsContainer div a,
+body.light-theme .projectsContainer div p{
+    color: antiquewhite;
+}
+body.dark-theme .projectsContainer-icon,
+.projectsContainer-icon {
+    margin-top: 30px;
+    color: antiquewhite;
+    margin-bottom: 20px;
+}
+body.light-theme .projectsContainer-icon {
+    color: #1A1A19;
+}
+body.dark-theme .projectsContainer-icon:hover,
+.projectsContainer-icon:hover,
+body.light-theme .projectsContainer-icon:hover {
+    color: pink;
+    transition: all 200ms;
+    transform: scale(2);
+}
