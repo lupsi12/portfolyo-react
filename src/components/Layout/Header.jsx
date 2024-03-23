@@ -15,7 +15,7 @@ import "../../styles/HeaderStyles.css";
 import {WbSunny} from "@mui/icons-material";
 const Header = () => {
     const openPDF = () => {
-        window.open(require("/Users/user/Desktop/frontend/src/assets/cv.pdf"), '_blank');
+        window.open(require("./cv.pdf"), '_blank');
     };
 
 
