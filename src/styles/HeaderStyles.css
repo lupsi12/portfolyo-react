@@ -160,4 +160,16 @@ body.light-theme .appBar-thypography:hover {
   box-sizing: border-box;
   width: 220px;
 }
-
+body.dark-theme .header-button,
+.header-button{
+  background: none;
+  color: antiquewhite;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+body.light-theme .header-button{
+  color: #1A1A19;
+}

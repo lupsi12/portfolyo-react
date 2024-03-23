@@ -72,7 +72,7 @@ const Header = () => {
                 <NavLink to={"/contact"} activeClassName="active">Contact</NavLink>
             </li>
             <li>
-                <a onClick={openPDF}>Resume</a>
+                <button className="header-button" onClick={openPDF}>Resume</button>
             </li>
             <WbSunny className="themeIcon" onClick={handleThemeIcon}/>
         </ul>
@@ -120,7 +120,7 @@ const Header = () => {
                         <NavLink activeClassName="active" to={"/contact"}>Contact</NavLink>
                     </li>
                     <li>
-                        <a onClick={openPDF}>Resume</a>
+                        <button className="header-button" onClick={openPDF}> Resume</button>
                     </li>
                     <WbSunny className="themeIcon" onClick={handleThemeIcon}/>
                 </ul>
