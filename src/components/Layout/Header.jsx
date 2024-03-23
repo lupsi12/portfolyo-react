@@ -14,8 +14,12 @@ import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
 import {WbSunny} from "@mui/icons-material";
 const Header = () => {
+    const openPDF = () => {
+        window.open(require("/Users/user/Desktop/frontend/src/assets/cv.pdf"), '_blank');
+    };
 
-  const [mobileOpen, setMobileOpen] = useState(false);
+
+    const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -67,6 +71,9 @@ const Header = () => {
             <li>
                 <NavLink to={"/contact"} activeClassName="active">Contact</NavLink>
             </li>
+            <li>
+                <a onClick={openPDF}>Resume</a>
+            </li>
             <WbSunny className="themeIcon" onClick={handleThemeIcon}/>
         </ul>
     </Box>
@@ -111,6 +118,9 @@ const Header = () => {
                     </li>
                     <li>
                         <NavLink activeClassName="active" to={"/contact"}>Contact</NavLink>
+                    </li>
+                    <li>
+                        <a onClick={openPDF}>Resume</a>
                     </li>
                     <WbSunny className="themeIcon" onClick={handleThemeIcon}/>
                 </ul>

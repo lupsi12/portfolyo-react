@@ -1,0 +1,46 @@
+.containerCertificate {
+    height: 720px ;
+    text-align: center;
+    margin-top: 30px;
+}
+.containerCertificate img{
+    border-radius: 10%;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+.containerCertificate img:hover{
+    transform: scale(1.1); /* Resmi 1.1 kat büyütür */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Geçiş süresi ve efekt türü ayarlanır */
+    border-radius: 0%;
+}
+body.light-theme .containerCertificate div,
+.containerCertificate div{
+    font-size: 30px;
+    font-weight: bold;
+    color: antiquewhite;
+    margin-top: 16px;
+}
+body.light-theme .containerCertificate div{
+    color: #1A1A19;
+}
+body.light-theme .containerCertificate div:hover,
+body.light-theme .containerCertificate div:hover,
+.containerCertificate div:hover{
+    color: pink;
+    transform: scale(1.1);
+    transition: all 200ms;
+}
+
+.click {
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+}
+.click img{
+    border-radius: 70%;
+    margin-right: 5px
+}
+.click img:hover {
+    transform: scale(2); /* Resmi 1.1 kat büyütür */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Geçiş süresi ve efekt türü ayarlanır */
+}

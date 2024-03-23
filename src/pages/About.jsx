@@ -1,23 +1,14 @@
 import Layout from "../components/Layout/Layout";
 import {Container} from "@mui/material";
 import "../../src/styles/AboutStyles.css";
+import { info } from "../info/Info";
 const About = () => {
     return(
         <Layout>
-            <Container maxWidth="md">
-                <div
-                    style={{
-                        backgroundColor: "blueviolet",
-                        height: "50em",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <h1>Işıl <span
-                        style={{ color: 'pink' }}>"About" </span>
-                        life
-                    </h1>
+            <Container className="containerAbout">
+                <div>
+                    <p>{info.about[0].firstPart}</p>
+                    <p>{info.about[0].secondPart}</p>
                 </div>
             </Container>
         </Layout>

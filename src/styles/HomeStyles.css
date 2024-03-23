@@ -55,11 +55,12 @@ body.dark-theme  .p{
     gap: 2rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    filter: blur(0.8px);
 }
 .picture:hover {
-    transform: scale(1.1); /* Resmi 1.1 kat büyütür */
-    filter: blur(1px);
+    transform: scale(1.2); /* Resmi 1.1 kat büyütür */
     transition: transform 0.3s ease, filter 0.3s ease; /* Geçiş süresi ve efekt türü ayarlanır */
+    filter: none;
 }
 
 .picture > div {

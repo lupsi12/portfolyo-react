@@ -1,0 +1,29 @@
+.containerAbout {
+    width: 80%;
+    height: 750px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.containerAbout div {
+    padding: 60px;
+}
+
+.containerAbout p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    white-space: pre-line;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.containerAbout p:first-child {
+    margin-top: 0;
+    font-weight: initial;
+    font-size: 50px;
+}
+
+.containerAbout p:last-child {
+    margin-bottom: 0;
+    font-size: 25px;
+}
