@@ -39,8 +39,8 @@ export const info = {
     about: [
         {
             firstPart:"Hi there,",
-            secondPart:"I currently live in Kocaeli and work as a third-year computer engineering student at Kocaeli University.",
-            thirdPart:"laskmdgnramşisacldkv şbflj"
+            secondPart:"I'm Işıl,I currently live in Kocaeli and work as a third-year computer engineering student at Kocaeli University.",
+            thirdPart:"I'm an innovative thinker, and a experienced software engineer with diverse backgrounds, My expertise in java backend development, along with my curiosity for emerging technologies and strong interpersonal commonication skills, enables me to approach projects with a passionate attitude to achieve success."
         }
     ],
     certificates: [

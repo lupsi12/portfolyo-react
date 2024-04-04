@@ -35,8 +35,6 @@ const About = () => {
                     <p><TypingEffect text={info.about[0].firstPart} speed={100}/></p>
                     <p><TypingEffect text={info.about[0].secondPart} speed={100}/></p>
                     <p><TypingEffect text={info.about[0].thirdPart} speed={100}/></p>
-                    <p><TypingEffect text={info.about[0].secondPart} speed={100}/></p>
-                    <p><TypingEffect text={info.about[0].thirdPart} speed={100}/></p>
                 </div>
             </Container>
         </Layout>

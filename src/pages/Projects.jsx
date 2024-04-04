@@ -3,7 +3,7 @@ import {Container, Divider} from "@mui/material";
 import "../../src/styles/ProjectsStyles.css";
 import { info } from "../info/Info";
 import React, {useState} from "react";
-import { Tsunami} from "@mui/icons-material";
+import {ExpandLess, ExpandMore, Tsunami} from "@mui/icons-material";
 const Projects = () => {
     const [sliderProjectData,setSliderProjectData]=useState(info.projects[0])
     const handleClickUp=()=>{
@@ -24,16 +24,16 @@ const Projects = () => {
         <Layout>
             <Container className="projectsContainer">
                 <Divider sx={{height:"30px",border:"none"}}/>
-                <Tsunami className="projectsContainer-icon" onClick={() => handleClickUp()}/>
+                <ExpandLess className="projectsContainer-icon" onClick={() => handleClickUp()}/>
                 <div>
                     <Divider sx={{height:"30px",border:"none"}}/>
                     <a href={sliderProjectData.projectLink} target="_blank" rel="noopener noreferrer">{sliderProjectData.id}-) {sliderProjectData.projectName} </a>
                     <p>{sliderProjectData.projectDesciription}</p>
-                    {sliderProjectData.projectUsages.map((data, i) => (
+                    {sliderProjectData.projectUsages.map((data,  i) => (
                         <p>{data} </p>
                     ))}
                 </div>
-                <Tsunami className="projectsContainer-icon" onClick={() =>handleClickDown()}/>
+                <ExpandMore className="projectsContainer-icon" onClick={() =>handleClickDown()}/>
             </Container>
         </Layout>
     )

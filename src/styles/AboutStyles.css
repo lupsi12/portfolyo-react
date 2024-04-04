@@ -21,7 +21,7 @@ body.dark-theme .containerAbout p,
 }
 body.light-theme .containerAbout p {
     margin-bottom: 15px;
-    line-height: 1.6;
+    line-height: 0.5;
     white-space: pre-line;
     color: #1A1A19;
     font-size: 25px;
