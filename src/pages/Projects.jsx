@@ -3,7 +3,7 @@ import {Container, Divider} from "@mui/material";
 import "../../src/styles/ProjectsStyles.css";
 import { info } from "../info/Info";
 import React, {useState} from "react";
-import {ExpandLess, ExpandMore, Tsunami} from "@mui/icons-material";
+import {ExpandLess, ExpandMore} from "@mui/icons-material";
 const Projects = () => {
     const [sliderProjectData,setSliderProjectData]=useState(info.projects[0])
     const handleClickUp=()=>{
