@@ -15,7 +15,7 @@ This is a personal portfolio website built with React. It showcases my projects,
 
 ## Demo
 
-You can view a live demo of the portfolio [https://isilkefal.netlify.app/](#).
+You can view a live demo of the portfolio [https://isilkefal.netlify.app/](#)
 
 ## Getting Started
 
